@@ -6,6 +6,7 @@ export const Container = styled.div`
     h1 {
         text-align: center;
         margin: 4rem 0;
+        font-family: 'Rubik', sans-serif;
     }
 `;
 
@@ -31,6 +32,7 @@ export const Movie = styled.li`
         font-weight: bold;
         font-size: 120%;
         text-align: center;
+        font-family: 'Rubik', sans-serif;
     }
     a {
         transition: all 0.3s;
@@ -51,4 +53,5 @@ export const Btn = styled.button`
     font-size: 12 px;
     cursor: pointer;
     transition: all 250ms;
+    font-family: 'Rubik', sans-serif;
 `;

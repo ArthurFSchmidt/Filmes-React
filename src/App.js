@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Movie from "./pages/movie";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     return (
