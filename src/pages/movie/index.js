@@ -11,16 +11,11 @@ const Movie = () => {
     const KEY = process.env.REACT_APP_KEY;
     useEffect(() => {
         fetch(
-            `https://api.themoviedb.org/3/movie/popular?api_key=${KEY}&language=pt-BR`
+            `https://api.themoviedb.org/3/movie/${id}?api_key=${KEY}&language=pt-BR`
         )
             .then((response) => response.json())
             .then((data) => {
-                const res = data.results;
-                let filme = res.find((key) => {
-                    // eslint-disable-next-line
-                    return key.id == id;
-                });
-                setMovie(filme);
+                setMovie(data);
             }); // eslint-disable-next-line
     }, []);
 
